@@ -42,7 +42,6 @@
   }
 }
 
-/* Global styles */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   line-height: 1.6;
@@ -52,7 +51,6 @@ body {
   padding: 0;
 }
 
-/* Header and Navigation styles */
 header {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
@@ -63,7 +61,6 @@ header {
 }
  
 
-/* Main content styles */
 main {
   max-width: 980px;
   margin: 2em auto;
@@ -104,8 +101,6 @@ img {
 img:hover {
   transform: scale(1.05);
 }
-
-/* Content section styles */
 .content-section {
   margin-bottom: 2em;
   padding-bottom: 1em;
@@ -117,7 +112,6 @@ img:hover {
   border-bottom: none;
 }
 
-/* Footer styles */
 footer {
   text-align: center;
   padding: 1em 0;
@@ -126,13 +120,11 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Media query for responsive design */
 @media screen and (max-width: 768px) {
   main {
     padding: 1em;
