@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interactive Google Map</h1>
+  <div id="map"></div>
+
+  <script>
+    function initMap() {
+      const location = { lat: 37.7749, lng: -122.4194 }; //   San Francisco
+      const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: location
+      });
+
+      const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: 'San Francisco'
+      });
+
+      const infoWindow = new google.maps.InfoWindow({
+        content: '<h2>San Francisco</h2><p>Welcome to SF!</p>'
+      });
+
+      marker.addListener('click', () => {
+        infoWindow.open(map, marker);
+      });
+
+     }
+  </script>
+</body>
+</html>
