@@ -1,3 +1,47 @@
+@media (min-width: 600px) {
+  main {
+    padding: 1.5em;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .content-section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  img {
+    transform: scale(1.1);
+  }
+
+  .content-section {
+    margin-bottom: 3em;
+  }
+}
+
 /* Global styles */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
