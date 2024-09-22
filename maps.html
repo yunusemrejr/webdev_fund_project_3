@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Map</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-        <script src="js/slider.js" defer></script>
+         <script src="js/slider.js" defer></script>
      <link rel="stylesheet" href="foundation/css/foundation.min.css" />
 
   <style>
@@ -17,32 +16,8 @@
 </head>
 <body>
   <h1>Interactive Google Map</h1>
-  <div id="map"></div>
-
-  <script>
-    function initMap() {
-      const location = { lat: 37.7749, lng: -122.4194 }; //   San Francisco
-      const map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
-        center: location
-      });
-
-      const marker = new google.maps.Marker({
-        position: location,
-        map: map,
-        title: 'San Francisco'
-      });
-
-      const infoWindow = new google.maps.InfoWindow({
-        content: '<h2>San Francisco</h2><p>Welcome to SF!</p>'
-      });
-
-      marker.addListener('click', () => {
-        infoWindow.open(map, marker);
-      });
-
-     }
-  </script>
+ <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=san%20francisco%20city+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe></div>
+  
 
 
    <div class="grid-container">
